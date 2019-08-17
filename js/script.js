@@ -179,3 +179,19 @@ function printName() {
     document.getElementById("success").style.color = "red";
     return false;
 }
+// //calls all function in the order
+function allFunctions() {
+    var userInputs = validateForm();
+    isValid = userInputs.formValid;
+    if (!isValid) {
+        validateForm();
+        return false;
+    } else {
+        getDayOfWeek();
+        findName();
+        printName();
+        return false;
+
+
+    }
+}
