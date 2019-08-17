@@ -116,3 +116,27 @@ function validateForm() {
     }
     return details;
 }
+
+
+function getDayOfWeek() {
+    var userInputs = validateForm();
+    userDetails = userInputs.userDetails;
+
+    mdate = userDetails.myDate;
+    mmonth = userDetails.myMonth;
+    mYear = userDetails.myYear;
+
+
+    var a = Math.round((14 - mmonth) / 12);
+    var y = mYear - a;
+    var m = mmonth + 12 * a - 2;
+    dayOfWeek = (mdate + y + Math.round(y / 4) - Math.round(y / 100) +
+        Math.round(mYear / 400) + Math.round((31 * m) / 12)) % 7;
+    // return dayOfWeek;
+    var the_day = weekDays[dayOfWeek];
+    // alert(the_day);
+
+
+    return the_day;
+
+}
