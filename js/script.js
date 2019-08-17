@@ -16,7 +16,9 @@ var nameList = [
         "Thursday": "Yaa",
         "Friday": "Afua",
         "Saturday": "Ama"
-    }]ss
+    }]
+
+    var weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
 
 
