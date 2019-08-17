@@ -171,3 +171,11 @@ function findName() {
 
     return akanName;
 }
+
+
+//print out the names
+function printName() {
+    document.getElementById("success").textContent = "Your akan name is " + akanName;
+    document.getElementById("success").style.color = "red";
+    return false;
+}
