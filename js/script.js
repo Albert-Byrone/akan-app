@@ -25,3 +25,23 @@ function validateForm (){
         }
     }
 };
+
+ //validate month
+ if (month == "" || month == null) {
+    document.getElementById("inputError").innerHTML = "Month is required";
+    document.getElementById("inputError").style.color = "red";
+    return false;
+} else {
+    if (!isNaN(month)) {
+        if (month <= 0 || month > 31) {
+            document.getElementById("inputError").innerHTML = "Month is Invalid";
+            document.getElementById("inputError").style.color = "red";
+            return false;
+        }
+    } else {
+
+        document.getElementById("inputError").innerHTML = "Month is Empty";
+        document.getElementById("inputError").style.color = "red";
+        return false;
+    }
+}
