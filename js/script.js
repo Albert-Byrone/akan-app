@@ -1,47 +1,94 @@
-function validateForm (){
-    var date = document.getElementById("day").value;
+//validate the inputs
+function validateForm() {
+    var day = document.getElementById("day").value;
     var month = document.getElementById("month").value;
     var year = document.getElementById("year").value;
     var gender = document.getElementsByName("gender");
+    var i = 0;
+    var formValid = false;
 
-    //validate the date 
-    if (date == "" || date == null) {
+    if (day == "" || day == null) {
 
-        document.getElementById("inputError").innerHTML = "date is required";
+        document.getElementById("inputError").innerHTML = "Day is required";
         document.getElementById("inputError").style.color = "red";
         return false;
 
     } else {
-        if (!isNaN(date)) {
-            if (date <= 0 || date > 31) {
-                document.getElementById("inputError").innerHTML = "date is Invalid";
+        if (!isNaN(day)) {
+            if (day <= 0 || day > 31) {
+                document.getElementById("inputError").innerHTML = "Day is Invalid";
                 document.getElementById("inputError").style.color = "red";
                 return false;
             }
         } else {
-            document.getElementById("inputError").innerHTML = "date is Empty";
+            document.getElementById("inputError").innerHTML = "Day is Empty";
             document.getElementById("inputError").style.color = "red";
             return false;
         }
     }
-};
-
- //validate month
- if (month == "" || month == null) {
-    document.getElementById("inputError").innerHTML = "Month is required";
-    document.getElementById("inputError").style.color = "red";
-    return false;
-} else {
-    if (!isNaN(month)) {
-        if (month <= 0 || month > 31) {
-            document.getElementById("inputError").innerHTML = "Month is Invalid";
-            document.getElementById("inputError").style.color = "red";
-            return false;
-        }
-    } else {
-
-        document.getElementById("inputError").innerHTML = "Month is Empty";
+    //validate month
+    if (month == "" || month == null) {
+        document.getElementById("inputError").innerHTML = "Month is required";
         document.getElementById("inputError").style.color = "red";
         return false;
+    } else {
+        if (!isNaN(month)) {
+            if (month <= 0 || month > 31) {
+                document.getElementById("inputError").innerHTML = "Month is Invalid";
+                document.getElementById("inputError").style.color = "red";
+                return false;
+            }
+        } else {
+
+            document.getElementById("inputError").innerHTML = "Month is Empty";
+            document.getElementById("inputError").style.color = "red";
+            return false;
+        }
     }
-}
+
+    //validate year
+    if (year == "" || year == null) {
+        document.getElementById("inputError").innerHTML = "Year is Empty";
+        document.getElementById("inputError").style.color = "red";
+        return false;
+
+    } else {
+        if (!isNaN(year)) {
+            if (year <= 0 || year > 2020) {
+
+                document.getElementById("inputError").innerHTML = "Year is empty";
+                document.getElementById("inputError").style.color = "red";
+                return false;
+            }
+        } else {
+
+            document.getElementById("inputError").innerHTML = "Year is Invalid";
+            document.getElementById("inputError").style.color = "red";
+            return false;
+        }
+    }
+    //check for gender
+    while (!formValid && i < gender.length) {
+        if (gender[i].checked)
+            formValid = true;
+        var genderValue = gender[i].value;
+        i++;
+    }
+    if (!formValid) {
+        document.getElementById("the-gender").style.color = 'red';
+        return false;
+    }
+
+    var userDetails = {
+        myDate: day,
+        myMonth: month,
+        myYear: year,
+        myGender: genderValue
+    };
+
+    var details = {
+        userDetails: userDetails,
+        formValid: formValid
+    }
+    return details;
+}s
