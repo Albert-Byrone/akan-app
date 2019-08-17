@@ -136,7 +136,38 @@ function getDayOfWeek() {
     var the_day = weekDays[dayOfWeek];
     // alert(the_day);
 
-
     return the_day;
+}
 
+//find the akan names
+function findName() {
+    var userInputs = validateForm();
+    var day = getDayOfWeek();
+
+    userDetails = userInputs.userDetails;
+
+    mdate = userDetails.myDate;
+    mgender = userDetails.myGender;
+
+    if (mgender === "male") {
+        var akanNameObj = nameList[0];
+        for (var key in akanNameObj) {
+            if (akanNameObj.hasOwnProperty(key)) {
+                if (key === day) {
+                    akanName = akanNameObj[key];
+                }
+            }
+        }
+    } else if (mgender === "female") {
+        var akanNameObj = nameList[1];
+        for (var key in akanNameObj) {
+            if (akanNameObj.hasOwnProperty(key)) {
+                if (key === day) {
+                    akanName = akanNameObj[key];
+                }
+            }
+        }
+    }
+
+    return akanName;
 }
