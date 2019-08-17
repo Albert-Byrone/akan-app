@@ -11,9 +11,9 @@
 
 <body>
     <div class="container">
-        <p>This is a application that returns the day of the week your were born by just takin your Birth Date </p>
+        <p id="text1">This is a application that returns the day of the week your were born by just taking your Birth Date </p>
         <form name="myForm" id="form" class="inputForm">
-            <p id="text1">Please enter your date of birth</p>
+            <p>Please enter your date of birth</p>
             
             Date :<input type="text" value="" name="day" id="day" class="inputs" placeholder="DD" maxlength="2">
             Month :<input type="text" value="" name="month" id="month" class="inputs" placeholder="MM" maxlength="2">
@@ -23,8 +23,10 @@
             <input type="radio" name="gender" value="male" id="male" class="gnd">Male</br>
             <input type="radio" name="gender" value="female" id="female">Female <br>
             <button type="submit" name="submit" id="btn" value="submit">Submit</button>
+            <button type="reset" name="reset" id="btn" value="submit">Reset</button>
         </form>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
