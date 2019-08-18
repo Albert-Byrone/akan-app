@@ -35,7 +35,7 @@ As a user of the application,you will be able to :
 
  * Access to internet
 
- ### Installaation Process
+ ### Installation Process
 
  ****  
 Click on the link below to download the app or
