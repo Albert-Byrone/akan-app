@@ -48,7 +48,7 @@ function validateForm() {
             if (day <= 0 || day > 31) {
                 document.getElementById("inputError").innerHTML = "Day is Invalid";
                 document.getElementById("inputError").style.color = "red";
-                
+
                 return false;
             }
         } else {
@@ -104,7 +104,7 @@ function validateForm() {
         document.getElementById("the-gender").innerHTML = "Please select your gender";
         document.getElementById("the-gender").style.color = "red";
         document.getElementById("the-gender").style.fontSize = "20px";
-        
+
         return false;
     }
 
@@ -133,7 +133,7 @@ function getDayOfWeek() {
     var a = Math.floor((14 - mmonth) / 12);
     var y = mYear - a;
     var m = mmonth + 12 * a - 2;
-    dayOfWeek =Math.abs(mdate + y + Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(mYear / 400) + Math.floor((31 * m) / 12))%7;
+    dayOfWeek = Math.abs(mdate + y + Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(mYear / 400) + Math.floor((31 * m) / 12)) % 7;
     // return dayOfWeek;
     var the_day = weekDays[dayOfWeek];
     // alert(the_day);
