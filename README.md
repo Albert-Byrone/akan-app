@@ -8,6 +8,19 @@
  ![before image](images/app2.png)
  ### This is the User Interface  of the application after it generates the Akan name
 
+ ## Table of Content
+
+ - [Description](#description)
+ - [Features](#features)
+ - [Behaviour Driven Development](#Behaviour-Driven-Development)
+ - [Requirements](#requirements)
+ - [Installation Process](#installation-Process)
+ - [Live Link](#Live-Link)
+ - [Technology  Used](#technology-Used)
+ - [Licence](#licence)
+ - [Authors Info](#Authors-Info)
+
+
  ## Description
 
  <p>This is an application that generates Akans names and alerts the user of the name based on date ,month and year of birth</p>
