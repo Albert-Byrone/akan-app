@@ -23,12 +23,12 @@ As a user of the application,you will be able to :
 
 1. Click the submit button to see what your  Akan name would be
 
-<!-- 
+
 ## Behaviour Driven Development
 
 | Behaviour      | Input     | Output     |
 | :------------- | :----------: | -----------: |
-|  Page loads     | User click the submit button without filling the form    | An error box is diplayed to the user.    | -->
+|  Page loads     | User click the submit button without filling the form    | An error box is diplayed to the user.    |
  ###  Requirements
 
  * Access to  a computer or any other garget
