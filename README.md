@@ -38,13 +38,11 @@ As a user of the application,you will be able to :
  ### Installation Process
 
  ****  
-Click on the link below to download the app or
+* Clone to thir repo : git clone https://* github.com/Albert-Byrone/akan-app.git
 
-Clone to thir repo : git clone https://github.com/Albert-Byrone/akan-app.git
+* Unzip the downloaded files in a folder of choice.
 
-Unzip the downloaded files in a folder of choice.
-
-Open the index file with any browser.
+* Open the index file from the zipped file with any browser.
  ****
 ### Live Link 
 
