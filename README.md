@@ -35,7 +35,7 @@ As a user of the application,you will be able to :
 
  * Access to internet
 
- <!-- ### Installaation Process
+ ### Installaation Process
 
  ****  
 Click on the link below to download the app or
@@ -46,7 +46,7 @@ Unzip the downloaded files in a folder of choice.
 
 Open the index file with any browser.
  ****
- -->
+
 
 
  
