@@ -59,6 +59,8 @@ As a user of the application,you will be able to :
  ****
 ### Live Link 
 
+- Click this link to view the live application https://albert-byrone.github.io/akan-app/
+
 ### Technology  Used
 * HTML - which was used to develope the structure off the pages.
 
