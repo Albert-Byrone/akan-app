@@ -1,3 +1,2 @@
-# Akan Name Application
+# Akan Name Generator
 
-##### By Albert Byrone 
