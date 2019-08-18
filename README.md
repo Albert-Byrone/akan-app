@@ -25,6 +25,8 @@
 
  <p>This is an application that generates Akans names and alerts the user of the name based on date ,month and year of birth</p>
 
+[Go Back to the top](#akan-Name-Generator)
+
 ## Features
 
 As a user of the application,you will be able to :
@@ -37,11 +39,15 @@ As a user of the application,you will be able to :
 1. Click the submit button to see what your  Akan name would be
 
 
+[Go Back to the top](#akan-Name-Generator)
+
 ## Behaviour Driven Development
 
 | Behaviour      | Input     | Output     |
 | :------------- | :----------: | -----------: |
 |  Page loads     | User click the submit button without filling the form    | An error box is diplayed to the user.    |
+
+[Go Back to the top](#akan-Name-Generator)
  ###  Requirements
 
  * Access to  a computer or any other garget
@@ -57,6 +63,7 @@ As a user of the application,you will be able to :
 
 * Open the index file from the zipped file with any browser.
  ****
+ [Go Back to the top](#akan-Name-Generator)
 ### Live Link 
 
 - Click this link to view the live application https://albert-byrone.github.io/akan-app/
@@ -67,6 +74,8 @@ As a user of the application,you will be able to :
 * CSS - which was used to style the User Interface.
 
 * JAVASCRIPT - which was used for DOM(Document Object Manipulation) scripts.
+
+[Go Back to the top](#akan-Name-Generator)
 
 ## Licence
 
@@ -92,12 +101,16 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+[Go Back to the top](#akan-Name-Generator)
+
 ## Authors Info
 
 Slack Profile - [Albert Byrone](https://app.slack.com/client/T077KKCG6/GLRQR61NW/user_profile/UKXCHMCNP?cdn_fallback=1)
 
 Linked - [Albert Byrone](https://www.linkedin.com/in/albert-byrone-664811144/)
 
+
+[Go Back to the top](#akan-Name-Generator)
 
 
  
